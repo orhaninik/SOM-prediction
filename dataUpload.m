@@ -13,9 +13,9 @@ data = imageDatastore('DATA_BOWEL_s6',...
     'LabelSource','foldernames');
 countEachLabel(data);
 
-data =shuffle(data);%seçimden önce verileri karıştır
+data =shuffle(data);%seÃ§imden Ã¶nce verileri karÃ½Ã¾tÃ½r
 
-[dataTrain,dataTest] = splitEachLabel(data,0.90);% %80 eğitim geriye kalan test
+[dataTrain,dataTest] = splitEachLabel(data,0.80);% %80 training
 dataTrain = shuffle(dataTrain);
 dataTest = shuffle(dataTest);
 imageSize=[224 224];
