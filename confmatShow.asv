@@ -61,6 +61,4 @@ sortClasses(cm,'descending-diagonal')
 cm.Normalization = 'absolute'; 
 
 cm.Normalization = 'column-normalized';
-sortClasses(cm,'descending-diagonal')
-cm.Normalization = 'absolute'; 
-end
+sortClasses(cm,'descend
